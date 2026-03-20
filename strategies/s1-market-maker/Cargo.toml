@@ -1,0 +1,27 @@
+[package]
+name = "s1-market-maker"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "s1-market-maker"
+path = "src/main.rs"
+
+[dependencies]
+shared = { path = "../../shared" }
+execution = { path = "../../execution" }
+
+tokio = { version = "1", features = ["full"] }
+rust_decimal = "1"
+rust_decimal_macros = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+dotenvy = "0.15"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+rust_decimal_macros = "1"

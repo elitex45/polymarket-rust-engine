@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "shared",
+    "execution",
+    "strategies/s1-market-maker",
+]

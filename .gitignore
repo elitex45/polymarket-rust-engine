@@ -1,0 +1,21 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# CSV trade logs (runtime data, not source)
+strategies/s1-market-maker/data/*.csv
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cargo lock is kept for binaries (intentional)
+# Cargo.lock

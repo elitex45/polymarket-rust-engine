@@ -1,0 +1,10 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rust_decimal = "1"
+rust_decimal_macros = "1"
+dashmap = "5"
+serde = { version = "1", features = ["derive"] }
